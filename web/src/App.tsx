@@ -56,7 +56,7 @@ function App() {
   }
 
   const topProjects = [
-    "RD VALUL",
+    "RD Imričko", // Replaces RD VALUL
     "EDU-TECH KAMPUS", // Matches EDU-TECH KAMPUS PÚCHOV
     "ASOC", // Replaces ADM Komarnianska
     "Chata na Jankovej Lúke",
@@ -65,7 +65,6 @@ function App() {
   ];
   
   const demotedProjects = [
-    "RD Imričko",
     "RD Veľká Paka",
     "RD POD PRIEHRADOU"
   ];
