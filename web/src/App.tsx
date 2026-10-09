@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowLeft, ExternalLink, X } from 'lucide-react';
+import { ArrowLeft, X } from 'lucide-react';
 import projectsData from './projects.json';
 
 type ProjectFile = {
