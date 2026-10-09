@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+node_modules/
+dist/
+.env
+.vercel
+# DO NOT ignore processed PDFs and thumbs, they are needed for Vercel deployment!
+# But wait, public/projects is huge. Vercel has a 100MB limit per function/repo usually, or Vercel static limits.
+# Let's hope it's not too big.

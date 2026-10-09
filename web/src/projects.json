@@ -1,0 +1,815 @@
+[
+  {
+    "id": "RD VALUL",
+    "name": "RD VALUL",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Projektová dokumentácia rieši návrh moderného vykurovacieho systému pre novostavbu rodinného domu v obci Chorvátsky Grob. Zabezpečenie tepelnej pohody je riešené s dôrazom na energetickú efektivitu, využitím tepelného čerpadla a podlahového vykurovania pre maximálny užívateľský komfort.",
+    "cover": "/projects/RD VALUL/20260317_RD_VALUL_UK-pôdorys_thumb.webp",
+    "files": [
+      {
+        "id": "20260317_RD_VALUL_UK-pôdorys",
+        "title": "20260317_RD_VALUL_UK-pôdorys",
+        "full": "/projects/RD VALUL/20260317_RD_VALUL_UK-pôdorys.pdf",
+        "thumb": "/projects/RD VALUL/20260317_RD_VALUL_UK-pôdorys_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "VÝKAZ UK VALUL TYP L",
+        "title": "VÝKAZ UK VALUL TYP L",
+        "full": "/projects/RD VALUL/VÝKAZ UK VALUL TYP L.pdf",
+        "thumb": "/projects/RD VALUL/VÝKAZ UK VALUL TYP L_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260317_RD_VALUL_UK-schema",
+        "title": "20260317_RD_VALUL_UK-schema",
+        "full": "/projects/RD VALUL/20260317_RD_VALUL_UK-schema.pdf",
+        "thumb": "/projects/RD VALUL/20260317_RD_VALUL_UK-schema_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "EDU-TECH KAMPUS PÚCHOV",
+    "name": "EDU-TECH KAMPUS PÚCHOV",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Komplexný návrh systému vzduchového a radiátorového vykurovania pre 4-podlažný objekt kampusu Trenčianskej univerzity v Púchove. Objekt je napojený na nový ekologický zdroj tepla – tepelné čerpadlo situované na streche budovy, čím sa minimalizujú prevádzkové náklady.",
+    "cover": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_1NP_thumb.webp",
+    "files": [
+      {
+        "id": "20260810_UK_KAMPUS_1NP",
+        "title": "20260810_UK_KAMPUS_1NP",
+        "full": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_1NP.pdf",
+        "thumb": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_1NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260810_UK_KAMPUS_2NP",
+        "title": "20260810_UK_KAMPUS_2NP",
+        "full": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_2NP.pdf",
+        "thumb": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_2NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260810_UK_KAMPUS_3NP",
+        "title": "20260810_UK_KAMPUS_3NP",
+        "full": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_3NP.pdf",
+        "thumb": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_3NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260810_UK_KAMPUS_4NP",
+        "title": "20260810_UK_KAMPUS_4NP",
+        "full": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_4NP.pdf",
+        "thumb": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_4NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260810_UK_KAMPUS_STRECHA",
+        "title": "20260810_UK_KAMPUS_STRECHA",
+        "full": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_STRECHA.pdf",
+        "thumb": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_STRECHA_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260810_UK_KAMPUS_Schéma rozvodov UK 1",
+        "title": "20260810_UK_KAMPUS_Schéma rozvodov UK 1",
+        "full": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_Schéma rozvodov UK 1.pdf",
+        "thumb": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_Schéma rozvodov UK 1_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260810_UK_KAMPUS_Schéma rozvodov UK 2",
+        "title": "20260810_UK_KAMPUS_Schéma rozvodov UK 2",
+        "full": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_Schéma rozvodov UK 2.pdf",
+        "thumb": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_Schéma rozvodov UK 2_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260810_UK_KAMPUS_Schéma zapojenia",
+        "title": "20260810_UK_KAMPUS_Schéma zapojenia",
+        "full": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_Schéma zapojenia.pdf",
+        "thumb": "/projects/EDU-TECH KAMPUS PÚCHOV/20260810_UK_KAMPUS_Schéma zapojenia_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "ADM Komarnianska",
+    "name": "ADM Komarnianska",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Projekt vykurovania pre hospodársko-administratívny objekt v Bratislave. Vykurovací systém je riešený pomocou nízkoteplotného teplovodného podlahového vykurovania. Zdrojom tepla je lokálne inštalované zariadenie optimalizované pre tepelné straty moderných kancelárskych priestorov.",
+    "cover": "/projects/ADM Komarnianska/251021_UK_ADM_Komarnianska_01_thumb.webp",
+    "files": [
+      {
+        "id": "251021_UK_ADM_Komarnianska_01",
+        "title": "251021_UK_ADM_Komarnianska_01",
+        "full": "/projects/ADM Komarnianska/251021_UK_ADM_Komarnianska_01.pdf",
+        "thumb": "/projects/ADM Komarnianska/251021_UK_ADM_Komarnianska_01_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "251021_UK_ADM_Komarnianska_02",
+        "title": "251021_UK_ADM_Komarnianska_02",
+        "full": "/projects/ADM Komarnianska/251021_UK_ADM_Komarnianska_02.pdf",
+        "thumb": "/projects/ADM Komarnianska/251021_UK_ADM_Komarnianska_02_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "Chata na Jankovej Lúke Štrbské Pleso",
+    "name": "Chata na Jankovej Lúke Štrbské Pleso",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Návrh vykurovacieho systému pre rekreačný objekt v náročných klimatických podmienkach Vysokých Tatier. Systém je dimenzovaný na spoľahlivú prevádzku aj pri extrémnych mrazoch, kombinujúci komfort s požiadavkami na rýchly nábeh tepla v rekreačných zariadeniach.",
+    "cover": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_01_thumb.webp",
+    "files": [
+      {
+        "id": "251110_UK_CHATA NA JANK LUKE_01",
+        "title": "251110_UK_CHATA NA JANK LUKE_01",
+        "full": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_01.pdf",
+        "thumb": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_01_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "251110_UK_CHATA NA JANK LUKE_02",
+        "title": "251110_UK_CHATA NA JANK LUKE_02",
+        "full": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_02.pdf",
+        "thumb": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_02_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "251110_UK_CHATA NA JANK LUKE_03",
+        "title": "251110_UK_CHATA NA JANK LUKE_03",
+        "full": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_03.pdf",
+        "thumb": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_03_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "251110_UK_CHATA NA JANK LUKE_04",
+        "title": "251110_UK_CHATA NA JANK LUKE_04",
+        "full": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_04.pdf",
+        "thumb": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_04_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "251110_UK_CHATA NA JANK LUKE_05",
+        "title": "251110_UK_CHATA NA JANK LUKE_05",
+        "full": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_05.pdf",
+        "thumb": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_05_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "251110_UK_CHATA NA JANK LUKE_06",
+        "title": "251110_UK_CHATA NA JANK LUKE_06",
+        "full": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_06.pdf",
+        "thumb": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_06_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "251110_UK_CHATA NA JANK LUKE_SIT-situacia",
+        "title": "251110_UK_CHATA NA JANK LUKE_SIT-situacia",
+        "full": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_SIT-situacia.pdf",
+        "thumb": "/projects/Chata na Jankovej Lúke Štrbské Pleso/251110_UK_CHATA NA JANK LUKE_SIT-situacia_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "Byt Zamocka 16 BA",
+    "name": "Byt Zamocka 16 BA",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Riešenie vykurovacej sústavy pre nadštandardný podkrovný byt v historickom centre Bratislavy. Systém je napojený na centrálny zdroj tepla a je precízne zaregulovaný s ohľadom na špecifické tepelnotechnické vlastnosti zložitej konštrukcie krovu.",
+    "cover": "/projects/Byt Zamocka 16 BA/251202_UK_ByT_Zamocka-Model_thumb.webp",
+    "files": [
+      {
+        "id": "251202_UK_ByT_Zamocka-Model",
+        "title": "251202_UK_ByT_Zamocka-Model",
+        "full": "/projects/Byt Zamocka 16 BA/251202_UK_ByT_Zamocka-Model.pdf",
+        "thumb": "/projects/Byt Zamocka 16 BA/251202_UK_ByT_Zamocka-Model_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260204_UK_ByT_Zamocka-Model",
+        "title": "260204_UK_ByT_Zamocka-Model",
+        "full": "/projects/Byt Zamocka 16 BA/260204_UK_ByT_Zamocka-Model.pdf",
+        "thumb": "/projects/Byt Zamocka 16 BA/260204_UK_ByT_Zamocka-Model_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "Výkaz materiálu_zamocka_uponor",
+        "title": "Výkaz materiálu_zamocka_uponor",
+        "full": "/projects/Byt Zamocka 16 BA/Výkaz materiálu_zamocka_uponor.pdf",
+        "thumb": "/projects/Byt Zamocka 16 BA/Výkaz materiálu_zamocka_uponor_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "ZCH Vrakuňa - lesopark",
+    "name": "ZCH Vrakuňa - lesopark",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Vykurovací systém pre záhradnú chatu s dôrazom na nezávislosť od plynovej prípojky. Zabezpečenie tepelnej pohody je riešené formou inteligentného elektrického podlahového vykurovania s plošnými vykurovacími fóliami a lokálnymi doplnkovými telesami v hygienických zázemiach.",
+    "cover": "/projects/ZCH Vrakuňa - lesopark/251128_UK_ZCH Vrakuňa - lesopark-pd_thumb.webp",
+    "files": [
+      {
+        "id": "251128_UK_ZCH Vrakuňa - lesopark-pd",
+        "title": "251128_UK_ZCH Vrakuňa - lesopark-pd",
+        "full": "/projects/ZCH Vrakuňa - lesopark/251128_UK_ZCH Vrakuňa - lesopark-pd.pdf",
+        "thumb": "/projects/ZCH Vrakuňa - lesopark/251128_UK_ZCH Vrakuňa - lesopark-pd_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "Obecny dom Limbach",
+    "name": "Obecny dom Limbach",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Návrh ústredného kúrenia pre nadstavbu obecného domu. Riešenie využíva nízkoteplotné konvekčné vykurovanie (50/40°C). Primárnym zdrojom tepla je moderná vnútorná jednotka tepelného čerpadla vzduch/voda, ktorá pokrýva kompletné potreby objektu na kúrenie aj prípravu teplej vody.",
+    "cover": "/projects/Obecny dom Limbach/252CB3_PSP_01_1241_S01_VYK_001_N01_00_thumb.webp",
+    "files": [
+      {
+        "id": "252CB3_PSP_01_1241_S01_VYK_001_N01_00",
+        "title": "252CB3_PSP_01_1241_S01_VYK_001_N01_00",
+        "full": "/projects/Obecny dom Limbach/252CB3_PSP_01_1241_S01_VYK_001_N01_00.pdf",
+        "thumb": "/projects/Obecny dom Limbach/252CB3_PSP_01_1241_S01_VYK_001_N01_00_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "252CB3_PSP_01_1241_S01_VYK_N02_SCH_00",
+        "title": "252CB3_PSP_01_1241_S01_VYK_N02_SCH_00",
+        "full": "/projects/Obecny dom Limbach/252CB3_PSP_01_1241_S01_VYK_N02_SCH_00.pdf",
+        "thumb": "/projects/Obecny dom Limbach/252CB3_PSP_01_1241_S01_VYK_N02_SCH_00_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "RD Senec Gajdosik",
+    "name": "RD Senec Gajdosik",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Projekt vykurovania rodinného domu v Senci. Systém je koncipovaný ako kombinácia teplovodného podlahového vykurovania v obytných zónach a doplnkových konvekčných telies. Dodávku tepla zabezpečuje vysokoúčinné tepelné čerpadlo VIESSMANN so zameraním na maximálnu efektivitu.",
+    "cover": "/projects/RD Senec Gajdosik/260122_UK_RD Senec_Gajdosik_PD_thumb.webp",
+    "files": [
+      {
+        "id": "260122_UK_RD Senec_Gajdosik_PD",
+        "title": "260122_UK_RD Senec_Gajdosik_PD",
+        "full": "/projects/RD Senec Gajdosik/260122_UK_RD Senec_Gajdosik_PD.pdf",
+        "thumb": "/projects/RD Senec Gajdosik/260122_UK_RD Senec_Gajdosik_PD_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260122_UK_RD Senec_Gajdosik_SCHEMA",
+        "title": "260122_UK_RD Senec_Gajdosik_SCHEMA",
+        "full": "/projects/RD Senec Gajdosik/260122_UK_RD Senec_Gajdosik_SCHEMA.pdf",
+        "thumb": "/projects/RD Senec Gajdosik/260122_UK_RD Senec_Gajdosik_SCHEMA_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "OV MS Novy svet",
+    "name": "OV MS Novy svet",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "",
+    "cover": "/projects/OV MS Novy svet/260123_UK_OV_MS_Novy svet_01_thumb.webp",
+    "files": [
+      {
+        "id": "260123_UK_OV_MS_Novy svet_01",
+        "title": "260123_UK_OV_MS_Novy svet_01",
+        "full": "/projects/OV MS Novy svet/260123_UK_OV_MS_Novy svet_01.pdf",
+        "thumb": "/projects/OV MS Novy svet/260123_UK_OV_MS_Novy svet_01_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260123_UK_OV_MS_Novy svet_02",
+        "title": "260123_UK_OV_MS_Novy svet_02",
+        "full": "/projects/OV MS Novy svet/260123_UK_OV_MS_Novy svet_02.pdf",
+        "thumb": "/projects/OV MS Novy svet/260123_UK_OV_MS_Novy svet_02_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260123_UK_OV_MS_Novy svet_03",
+        "title": "260123_UK_OV_MS_Novy svet_03",
+        "full": "/projects/OV MS Novy svet/260123_UK_OV_MS_Novy svet_03.pdf",
+        "thumb": "/projects/OV MS Novy svet/260123_UK_OV_MS_Novy svet_03_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260123_UK_OV_MS_Novy svet_04",
+        "title": "260123_UK_OV_MS_Novy svet_04",
+        "full": "/projects/OV MS Novy svet/260123_UK_OV_MS_Novy svet_04.pdf",
+        "thumb": "/projects/OV MS Novy svet/260123_UK_OV_MS_Novy svet_04_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "RD FIGA",
+    "name": "RD FIGA",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Návrh kúrenia pre novostavbu rodinného domu so zameraním na pokročilé tepelné čerpadlo vzduch/voda. Systém pracuje s teplotným spádom 45/35°C do veľkoplošného podlahového vykurovania a plynulou reguláciou priestorovej teploty, zabezpečujúc pokrytie tepelných strát necelých 10 kW.",
+    "cover": "/projects/RD FIGA/260130_UK_RD FIGA-1np_thumb.webp",
+    "files": [
+      {
+        "id": "260130_UK_RD FIGA-1np",
+        "title": "260130_UK_RD FIGA-1np",
+        "full": "/projects/RD FIGA/260130_UK_RD FIGA-1np.pdf",
+        "thumb": "/projects/RD FIGA/260130_UK_RD FIGA-1np_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260130_UK_RD FIGA-1pp",
+        "title": "260130_UK_RD FIGA-1pp",
+        "full": "/projects/RD FIGA/260130_UK_RD FIGA-1pp.pdf",
+        "thumb": "/projects/RD FIGA/260130_UK_RD FIGA-1pp_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260130_UK_RD FIGA_SCHEMA-Model",
+        "title": "260130_UK_RD FIGA_SCHEMA-Model",
+        "full": "/projects/RD FIGA/260130_UK_RD FIGA_SCHEMA-Model.pdf",
+        "thumb": "/projects/RD FIGA/260130_UK_RD FIGA_SCHEMA-Model_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "Unimpex vinarske centrum",
+    "name": "Unimpex vinarske centrum",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Realizačný projekt vykurovania pre administratívno-obchodnú stavbu Vinárskeho centra vo Svätom Jure. Teplovodný podlahový systém je plne optimalizovaný na špecifickú prevádzku centra s výpočtovou tepelnou stratou 31 kW, s ohľadom na zónovú reguláciu.",
+    "cover": "/projects/Unimpex vinarske centrum/260219_UK_Unimpex_vinarske_centrum_A01_thumb.webp",
+    "files": [
+      {
+        "id": "260219_UK_Unimpex_vinarske_centrum_A01",
+        "title": "260219_UK_Unimpex_vinarske_centrum_A01",
+        "full": "/projects/Unimpex vinarske centrum/260219_UK_Unimpex_vinarske_centrum_A01.pdf",
+        "thumb": "/projects/Unimpex vinarske centrum/260219_UK_Unimpex_vinarske_centrum_A01_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260219_UK_Unimpex_vinarske_centrum_A02",
+        "title": "260219_UK_Unimpex_vinarske_centrum_A02",
+        "full": "/projects/Unimpex vinarske centrum/260219_UK_Unimpex_vinarske_centrum_A02.pdf",
+        "thumb": "/projects/Unimpex vinarske centrum/260219_UK_Unimpex_vinarske_centrum_A02_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260219_UK_Unimpex_vinarske_centrum_A03",
+        "title": "260219_UK_Unimpex_vinarske_centrum_A03",
+        "full": "/projects/Unimpex vinarske centrum/260219_UK_Unimpex_vinarske_centrum_A03.pdf",
+        "thumb": "/projects/Unimpex vinarske centrum/260219_UK_Unimpex_vinarske_centrum_A03_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260219_UK_Unimpex_vinarske_centrum_A05",
+        "title": "260219_UK_Unimpex_vinarske_centrum_A05",
+        "full": "/projects/Unimpex vinarske centrum/260219_UK_Unimpex_vinarske_centrum_A05.pdf",
+        "thumb": "/projects/Unimpex vinarske centrum/260219_UK_Unimpex_vinarske_centrum_A05_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "Byt Bjornsonova",
+    "name": "Byt Bjornsonova",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Projekt rekonštrukcie vykurovacieho systému bytovej jednotky. Zahŕňa prepočet existujúcich tepelných strát a modernizáciu systému na dosiahnutie lepšej tepelnej pohody so súčasným znížením energetickej náročnosti.",
+    "cover": "/projects/Byt Bjornsonova/260212_UK_Byt Bjornsonova_podorys_PODORYS_ZDROJ_thumb.webp",
+    "files": [
+      {
+        "id": "260212_UK_Byt Bjornsonova_podorys_PODORYS_ZDROJ",
+        "title": "260212_UK_Byt Bjornsonova_podorys_PODORYS_ZDROJ",
+        "full": "/projects/Byt Bjornsonova/260212_UK_Byt Bjornsonova_podorys_PODORYS_ZDROJ.pdf",
+        "thumb": "/projects/Byt Bjornsonova/260212_UK_Byt Bjornsonova_podorys_PODORYS_ZDROJ_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260212_UK_Byt Bjorsonova_PODORYS_PODLAHOVKA",
+        "title": "260212_UK_Byt Bjorsonova_PODORYS_PODLAHOVKA",
+        "full": "/projects/Byt Bjornsonova/260212_UK_Byt Bjorsonova_PODORYS_PODLAHOVKA.pdf",
+        "thumb": "/projects/Byt Bjornsonova/260212_UK_Byt Bjorsonova_PODORYS_PODLAHOVKA_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "251219_UK_Byt Bjornsonova_KLADAČSKY_VYKRES",
+        "title": "251219_UK_Byt Bjornsonova_KLADAČSKY_VYKRES",
+        "full": "/projects/Byt Bjornsonova/251219_UK_Byt Bjornsonova_KLADAČSKY_VYKRES.pdf",
+        "thumb": "/projects/Byt Bjornsonova/251219_UK_Byt Bjornsonova_KLADAČSKY_VYKRES_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "251217_UK_Bjornsonova_ODVOD_SPALIN_SCHEMA",
+        "title": "251217_UK_Bjornsonova_ODVOD_SPALIN_SCHEMA",
+        "full": "/projects/Byt Bjornsonova/251217_UK_Bjornsonova_ODVOD_SPALIN_SCHEMA.pdf",
+        "thumb": "/projects/Byt Bjornsonova/251217_UK_Bjornsonova_ODVOD_SPALIN_SCHEMA_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "RD HVZD",
+    "name": "RD HVZD",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Projektová dokumentácia ústredného vykurovania rodinného domu v obci Hviezdoslavov. Systém je poháňaný tepelným čerpadlom vzduch-voda, doplnený o podlahové rozvody tepla a optimalizovaný na dlhodobo nízke prevádzkové náklady a bezúdržbový chod.",
+    "cover": "/projects/RD HVZD/20260406_RD_HVZD_UK final-1np 840x420_thumb.webp",
+    "files": [
+      {
+        "id": "20260406_RD_HVZD_UK final-1np 840x420",
+        "title": "20260406_RD_HVZD_UK final-1np 840x420",
+        "full": "/projects/RD HVZD/20260406_RD_HVZD_UK final-1np 840x420.pdf",
+        "thumb": "/projects/RD HVZD/20260406_RD_HVZD_UK final-1np 840x420_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260406_RD_HVZD_UK final-schema 630x297",
+        "title": "20260406_RD_HVZD_UK final-schema 630x297",
+        "full": "/projects/RD HVZD/20260406_RD_HVZD_UK final-schema 630x297.pdf",
+        "thumb": "/projects/RD HVZD/20260406_RD_HVZD_UK final-schema 630x297_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "Chata ZLABY",
+    "name": "Chata ZLABY",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Projekt prístavby a rekonštrukcie rekreačnej chaty s návrhom komfortného elektrického plošného vykurovania (vykurovacie fólie). Riešenie je ideálne pre víkendové objekty vďaka svojej okamžitej reakcii, jednoduchej inštalácii a možnosti vzdialeného ovládania.",
+    "cover": "/projects/Chata ZLABY/20260629_UK_CHATA_ŽLABY-1.NP_thumb.webp",
+    "files": [
+      {
+        "id": "20260629_UK_CHATA_ŽLABY-1.NP",
+        "title": "20260629_UK_CHATA_ŽLABY-1.NP",
+        "full": "/projects/Chata ZLABY/20260629_UK_CHATA_ŽLABY-1.NP.pdf",
+        "thumb": "/projects/Chata ZLABY/20260629_UK_CHATA_ŽLABY-1.NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260629_UK_CHATA_ŽLABY-2.NP",
+        "title": "20260629_UK_CHATA_ŽLABY-2.NP",
+        "full": "/projects/Chata ZLABY/20260629_UK_CHATA_ŽLABY-2.NP.pdf",
+        "thumb": "/projects/Chata ZLABY/20260629_UK_CHATA_ŽLABY-2.NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260629_UK_CHATA_ŽLABY-1.PP",
+        "title": "20260629_UK_CHATA_ŽLABY-1.PP",
+        "full": "/projects/Chata ZLABY/20260629_UK_CHATA_ŽLABY-1.PP.pdf",
+        "thumb": "/projects/Chata ZLABY/20260629_UK_CHATA_ŽLABY-1.PP_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "TTP - FaxCopy",
+    "name": "TTP - FaxCopy",
+    "profession": "TTP",
+    "stage": "Projekt stavby",
+    "description": "Odborné tepelnotechnické posúdenie (TTP) stavebných konštrukcií objektu. Dokument preukazuje zhodu navrhovaných obalových konštrukcií s normovými požiadavkami STN, posudzuje riziko kondenzácie a definuje celkovú energetickú kvalitu stavby.",
+    "cover": "/projects/TTP - FaxCopy/20260903_TTP_FAXCOPY_thumb.webp",
+    "files": [
+      {
+        "id": "20260903_TTP_FAXCOPY",
+        "title": "20260903_TTP_FAXCOPY",
+        "full": "/projects/TTP - FaxCopy/20260903_TTP_FAXCOPY.pdf",
+        "thumb": "/projects/TTP - FaxCopy/20260903_TTP_FAXCOPY_thumb.webp",
+        "type": "pdf"
+      },
+      {
+        "id": "P1-TTP",
+        "title": "P1-TTP",
+        "full": "/projects/TTP - FaxCopy/P1-TTP.pdf",
+        "thumb": "/projects/TTP - FaxCopy/P1-TTP_thumb.webp",
+        "type": "pdf"
+      },
+      {
+        "id": "S1-TPP",
+        "title": "S1-TPP",
+        "full": "/projects/TTP - FaxCopy/S1-TPP.pdf",
+        "thumb": "/projects/TTP - FaxCopy/S1-TPP_thumb.webp",
+        "type": "pdf"
+      },
+      {
+        "id": "SO1-TTP",
+        "title": "SO1-TTP",
+        "full": "/projects/TTP - FaxCopy/SO1-TTP.pdf",
+        "thumb": "/projects/TTP - FaxCopy/SO1-TTP_thumb.webp",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "TTP - Matyšák",
+    "name": "TTP - Matyšák",
+    "profession": "TTP",
+    "stage": "Projekt stavby",
+    "description": "Tepelnotechnické posúdenie konštrukcií výrobnej haly Víno Matyšák v Pezinku. Analyzuje všetky kľúčové teplovýmenné plochy (steny, strechy, výplne otvorov) a garantuje, že architektonické riešenie spĺňa hygienické aj energetické kritériá súčasnej legislatívy.",
+    "cover": "/projects/TTP - Matyšák/20260917_TTP_Víno MATYŠÁK_thumb.webp",
+    "files": [
+      {
+        "id": "20260917_TTP_Víno MATYŠÁK",
+        "title": "20260917_TTP_Víno MATYŠÁK",
+        "full": "/projects/TTP - Matyšák/20260917_TTP_Víno MATYŠÁK.pdf",
+        "thumb": "/projects/TTP - Matyšák/20260917_TTP_Víno MATYŠÁK_thumb.webp",
+        "type": "pdf"
+      }
+    ]
+  },
+  {
+    "id": "RD Imričko",
+    "name": "RD Imričko",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Moderný návrh ústredného kúrenia pre rodinný dom v obci Slivník. Projekt v sebe spája detailný výpočet tepelných strát a ziskov podľa STN EN 12831 s optimalizovaným návrhom zdroja a dimenzovaním rozvodných potrubí.",
+    "cover": "/projects/RD Imričko/20260907_UK_RD_Imričko_1NP_thumb.webp",
+    "files": [
+      {
+        "id": "20260907_UK_RD_Imričko_1NP",
+        "title": "20260907_UK_RD_Imričko_1NP",
+        "full": "/projects/RD Imričko/20260907_UK_RD_Imričko_1NP.pdf",
+        "thumb": "/projects/RD Imričko/20260907_UK_RD_Imričko_1NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260907_UK_RD_Imričko_Schéma",
+        "title": "20260907_UK_RD_Imričko_Schéma",
+        "full": "/projects/RD Imričko/20260907_UK_RD_Imričko_Schéma.pdf",
+        "thumb": "/projects/RD Imričko/20260907_UK_RD_Imričko_Schéma_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "KAVIAREN KLASIKO",
+    "name": "KAVIAREN KLASIKO",
+    "profession": "Zdravotechnika (ZTI)",
+    "stage": "Realizačný projekt (RP)",
+    "description": "Realizačný projekt zdravotnej techniky pre gastro-prevádzku v OC Polus. Zahŕňa profesionálny návrh vnútorných rozvodov pitnej vody a kanalizácie s dôrazom na spoľahlivosť technológie baru, prísne hygienické normy a bezproblémové napojenie na siete nákupného centra.",
+    "cover": "/projects/KAVIAREN KLASIKO/KAVIAREN_KLASIKO_ZTI_DSP_podorys_thumb.webp",
+    "files": [
+      {
+        "id": "KAVIAREN_KLASIKO_ZTI_DSP_podorys",
+        "title": "KAVIAREN_KLASIKO_ZTI_DSP_podorys",
+        "full": "/projects/KAVIAREN KLASIKO/KAVIAREN_KLASIKO_ZTI_DSP_podorys.pdf",
+        "thumb": "/projects/KAVIAREN KLASIKO/KAVIAREN_KLASIKO_ZTI_DSP_podorys_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "KAVIAREN_KLASIKO_ZTI_DSP_schema",
+        "title": "KAVIAREN_KLASIKO_ZTI_DSP_schema",
+        "full": "/projects/KAVIAREN KLASIKO/KAVIAREN_KLASIKO_ZTI_DSP_schema.pdf",
+        "thumb": "/projects/KAVIAREN KLASIKO/KAVIAREN_KLASIKO_ZTI_DSP_schema_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "Kaviareň Nivy",
+    "name": "Kaviareň Nivy",
+    "profession": "Zdravotechnika (ZTI)",
+    "stage": "Realizačný projekt (RP)",
+    "description": "Projekt vnútorného vodovodu a kanalizácie pre prémiovú kaviareň v komplexe Nivy Centrum Bratislava. Technické riešenie pokrýva zásobovanie všetkých zariaďovacích predmetov a kaviarenských technológií filtrovanou vodou vrátane manažmentu splaškových vôd.",
+    "cover": "/projects/Kaviareň Nivy/20251410_RP_E11_07_ZTI_ROZPRAVKOVA KAVIAREN_PODORYS_thumb.webp",
+    "files": [
+      {
+        "id": "20251410_RP_E11_07_ZTI_ROZPRAVKOVA KAVIAREN_PODORYS",
+        "title": "20251410_RP_E11_07_ZTI_ROZPRAVKOVA KAVIAREN_PODORYS",
+        "full": "/projects/Kaviareň Nivy/20251410_RP_E11_07_ZTI_ROZPRAVKOVA KAVIAREN_PODORYS.pdf",
+        "thumb": "/projects/Kaviareň Nivy/20251410_RP_E11_07_ZTI_ROZPRAVKOVA KAVIAREN_PODORYS_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20251410_RP_E11_07_ZTI_ROZPRAVKOVA KAVIAREN_REZ",
+        "title": "20251410_RP_E11_07_ZTI_ROZPRAVKOVA KAVIAREN_REZ",
+        "full": "/projects/Kaviareň Nivy/20251410_RP_E11_07_ZTI_ROZPRAVKOVA KAVIAREN_REZ.pdf",
+        "thumb": "/projects/Kaviareň Nivy/20251410_RP_E11_07_ZTI_ROZPRAVKOVA KAVIAREN_REZ_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "ASOC – Administratívno-skladové a obchodné centrum",
+    "name": "ASOC – Administratívno-skladové a obchodné centrum",
+    "profession": "Zdravotechnika (ZTI)",
+    "stage": "Projekt stavby",
+    "description": "Projekt zdravotnej techniky (ZTI) pre veľkoplošné skladové haly. Spracováva koncepciu odkanalizovania a prívodu úžitkovej vody pre hygienické zázemia ubytovaných zamestnancov s dôrazom na vysokú kapacitu a zaťaženie systému.",
+    "cover": "/projects/ASOC – Administratívno-skladové a obchodné centrum/20260619_ZTI_ASOC-1.np_thumb.webp",
+    "files": [
+      {
+        "id": "20260619_ZTI_ASOC-1.np",
+        "title": "20260619_ZTI_ASOC-1.np",
+        "full": "/projects/ASOC – Administratívno-skladové a obchodné centrum/20260619_ZTI_ASOC-1.np.pdf",
+        "thumb": "/projects/ASOC – Administratívno-skladové a obchodné centrum/20260619_ZTI_ASOC-1.np_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260619_ZTI_ASOC-2np",
+        "title": "20260619_ZTI_ASOC-2np",
+        "full": "/projects/ASOC – Administratívno-skladové a obchodné centrum/20260619_ZTI_ASOC-2np.pdf",
+        "thumb": "/projects/ASOC – Administratívno-skladové a obchodné centrum/20260619_ZTI_ASOC-2np_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260619_ZTI_ASOC-strecha",
+        "title": "20260619_ZTI_ASOC-strecha",
+        "full": "/projects/ASOC – Administratívno-skladové a obchodné centrum/20260619_ZTI_ASOC-strecha.pdf",
+        "thumb": "/projects/ASOC – Administratívno-skladové a obchodné centrum/20260619_ZTI_ASOC-strecha_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "RD PODBI",
+    "name": "RD PODBI",
+    "profession": "Zdravotechnika (ZTI) + Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Riešenie teplovodného vykurovania s núteným obehom pre prístavbu rodinného domu. Navrhnuté riešenie využíva moderné doskové radiátory s nízkou tepelnou zotrvačnosťou, pripojené na existujúci rozvod a zabezpečujúce okamžitý tepelný výkon s presnou reguláciou.",
+    "cover": "/projects/RD PODBI/20260721_RD_PODBI_UK_1NP_thumb.webp",
+    "files": [
+      {
+        "id": "20260721_RD_PODBI_UK_1NP",
+        "title": "20260721_RD_PODBI_UK_1NP",
+        "full": "/projects/RD PODBI/20260721_RD_PODBI_UK_1NP.pdf",
+        "thumb": "/projects/RD PODBI/20260721_RD_PODBI_UK_1NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260721_RD_PODBI_ZTI_1NP",
+        "title": "20260721_RD_PODBI_ZTI_1NP",
+        "full": "/projects/RD PODBI/20260721_RD_PODBI_ZTI_1NP.pdf",
+        "thumb": "/projects/RD PODBI/20260721_RD_PODBI_ZTI_1NP_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "RD BARICICOVA",
+    "name": "RD BARICICOVA",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Návrh moderného systému podlahového vykurovania pre rodinný dom v obci Kuchyňa. Zdrojom tepla je kompaktné tepelné čerpadlo. Projekt zahŕňa kompletnú hydraulickú schému, kladačské plány a vyregulovanie sústavy pre dosiahnutie maximálnej efektivity.",
+    "cover": "/projects/RD BARICICOVA/2619AD_PSP_01_1111_S01_VYK_001_N01_00_thumb.webp",
+    "files": [
+      {
+        "id": "2619AD_PSP_01_1111_S01_VYK_001_N01_00",
+        "title": "2619AD_PSP_01_1111_S01_VYK_001_N01_00",
+        "full": "/projects/RD BARICICOVA/2619AD_PSP_01_1111_S01_VYK_001_N01_00.pdf",
+        "thumb": "/projects/RD BARICICOVA/2619AD_PSP_01_1111_S01_VYK_001_N01_00_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "2619AD_PSP_01_1111_S01_VYK_002_N02_00",
+        "title": "2619AD_PSP_01_1111_S01_VYK_002_N02_00",
+        "full": "/projects/RD BARICICOVA/2619AD_PSP_01_1111_S01_VYK_002_N02_00.pdf",
+        "thumb": "/projects/RD BARICICOVA/2619AD_PSP_01_1111_S01_VYK_002_N02_00_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "2619AD_PSP_01_1111_S01_VYK_003_SCH_00",
+        "title": "2619AD_PSP_01_1111_S01_VYK_003_SCH_00",
+        "full": "/projects/RD BARICICOVA/2619AD_PSP_01_1111_S01_VYK_003_SCH_00.pdf",
+        "thumb": "/projects/RD BARICICOVA/2619AD_PSP_01_1111_S01_VYK_003_SCH_00_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "RD POD PRIEHRADOU",
+    "name": "RD POD PRIEHRADOU",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Ústredné kúrenie pre IBV v obci Kuchyňa. Kombinácia ekologického zdroja tepla a inteligentnej distribúcie s presným výpočtom tepelných strát zaručuje spoľahlivú a ekonomickú prevádzku počas celého roka.",
+    "cover": "/projects/RD POD PRIEHRADOU/20260804_UK_RD_POD PRIEHRADOU_1NP_thumb.webp",
+    "files": [
+      {
+        "id": "20260804_UK_RD_POD PRIEHRADOU_1NP",
+        "title": "20260804_UK_RD_POD PRIEHRADOU_1NP",
+        "full": "/projects/RD POD PRIEHRADOU/20260804_UK_RD_POD PRIEHRADOU_1NP.pdf",
+        "thumb": "/projects/RD POD PRIEHRADOU/20260804_UK_RD_POD PRIEHRADOU_1NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260804_UK_RD_POD PRIEHRADOU_Schéma",
+        "title": "20260804_UK_RD_POD PRIEHRADOU_Schéma",
+        "full": "/projects/RD POD PRIEHRADOU/20260804_UK_RD_POD PRIEHRADOU_Schéma.pdf",
+        "thumb": "/projects/RD POD PRIEHRADOU/20260804_UK_RD_POD PRIEHRADOU_Schéma_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "RD Veľká Paka",
+    "name": "RD Veľká Paka",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Kompletný projekt vykurovania a zdravotnej techniky pre bungalov vo Veľkej Pake. Obsahuje detailný hydraulický návrh rozvodov pitnej vody, domovej kanalizácie a teplovodného vykurovacieho okruhu, optimalizovaného pre potreby mladej rodiny.",
+    "cover": "/projects/RD Veľká Paka/20260916_UK_RD_VELKA PAKA-1NP_thumb.webp",
+    "files": [
+      {
+        "id": "20260916_UK_RD_VELKA PAKA-1NP",
+        "title": "20260916_UK_RD_VELKA PAKA-1NP",
+        "full": "/projects/RD Veľká Paka/20260916_UK_RD_VELKA PAKA-1NP.pdf",
+        "thumb": "/projects/RD Veľká Paka/20260916_UK_RD_VELKA PAKA-1NP_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "20260916_UK_RD_VELKA PAKA-schéma",
+        "title": "20260916_UK_RD_VELKA PAKA-schéma",
+        "full": "/projects/RD Veľká Paka/20260916_UK_RD_VELKA PAKA-schéma.pdf",
+        "thumb": "/projects/RD Veľká Paka/20260916_UK_RD_VELKA PAKA-schéma_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "ZTI Export",
+    "name": "ZTI Export",
+    "profession": "Zdravotechnika (ZTI)",
+    "stage": "Projekt stavby",
+    "description": "Projekt technického zabezpečenia budov – distribúcia pitnej vody a sanitárnej kanalizácie.",
+    "cover": "/projects/ZTI Export/260528_ZTI_Chata zlata hora-1np_thumb.webp",
+    "files": [
+      {
+        "id": "260528_ZTI_Chata zlata hora-1np",
+        "title": "260528_ZTI_Chata zlata hora-1np",
+        "full": "/projects/ZTI Export/260528_ZTI_Chata zlata hora-1np.pdf",
+        "thumb": "/projects/ZTI Export/260528_ZTI_Chata zlata hora-1np_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260528_ZTI_Chata zlata hora-1pp",
+        "title": "260528_ZTI_Chata zlata hora-1pp",
+        "full": "/projects/ZTI Export/260528_ZTI_Chata zlata hora-1pp.pdf",
+        "thumb": "/projects/ZTI Export/260528_ZTI_Chata zlata hora-1pp_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260528_ZTI_Chata zlata hora-Model",
+        "title": "260528_ZTI_Chata zlata hora-Model",
+        "full": "/projects/ZTI Export/260528_ZTI_Chata zlata hora-Model.pdf",
+        "thumb": "/projects/ZTI Export/260528_ZTI_Chata zlata hora-Model_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260528_ZTI_Chata zlata hora-strecha",
+        "title": "260528_ZTI_Chata zlata hora-strecha",
+        "full": "/projects/ZTI Export/260528_ZTI_Chata zlata hora-strecha.pdf",
+        "thumb": "/projects/ZTI Export/260528_ZTI_Chata zlata hora-strecha_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260528_ZTI_Chata zlata hora_st",
+        "title": "260528_ZTI_Chata zlata hora_st",
+        "full": "/projects/ZTI Export/260528_ZTI_Chata zlata hora_st.pdf",
+        "thumb": "/projects/ZTI Export/260528_ZTI_Chata zlata hora_st_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  },
+  {
+    "id": "Chata zlata hora",
+    "name": "Chata zlata hora",
+    "profession": "Vykurovanie (ÚK)",
+    "stage": "Projekt stavby",
+    "description": "Projekt zdravotnej techniky a vykurovania pre exkluzívnu záhradnú chatku v Stupave. Rieši nezávislé zásobovanie pitnou vodou zo studne, odvod splaškov do lokálnej žumpy a komfortné priamovýhrevné podlahové kúrenie (Heatflow) pre obývané podlažia.",
+    "cover": "/projects/Chata zlata hora/260528_UK_Chata zlata hora_1np_thumb.webp",
+    "files": [
+      {
+        "id": "260528_UK_Chata zlata hora_1np",
+        "title": "260528_UK_Chata zlata hora_1np",
+        "full": "/projects/Chata zlata hora/260528_UK_Chata zlata hora_1np.pdf",
+        "thumb": "/projects/Chata zlata hora/260528_UK_Chata zlata hora_1np_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260528_UK_Chata zlata hora_1pp",
+        "title": "260528_UK_Chata zlata hora_1pp",
+        "full": "/projects/Chata zlata hora/260528_UK_Chata zlata hora_1pp.pdf",
+        "thumb": "/projects/Chata zlata hora/260528_UK_Chata zlata hora_1pp_thumb.webp",
+        "type": "drawing"
+      },
+      {
+        "id": "260528_UK_Chata zlata hora_strecha",
+        "title": "260528_UK_Chata zlata hora_strecha",
+        "full": "/projects/Chata zlata hora/260528_UK_Chata zlata hora_strecha.pdf",
+        "thumb": "/projects/Chata zlata hora/260528_UK_Chata zlata hora_strecha_thumb.webp",
+        "type": "drawing"
+      }
+    ]
+  }
+]
