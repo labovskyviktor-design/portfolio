@@ -1,0 +1,3368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+@page {
+    size: 297mm 210mm;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #ffffff;
+    color: #1e293b;
+    -webkit-print-color-adjust: exact;
+}
+
+/* ==================== COVER PAGE ==================== */
+.cover-page {
+    width: 297mm;
+    height: 210mm;
+    padding: 22mm 24mm 18mm 24mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+    position: relative;
+    background: radial-gradient(circle at 80% 20%, #1e293b 0%, #0b1329 70%, #060913 100%);
+    overflow: hidden;
+}
+.cover-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 15mm 15mm;
+    pointer-events: none;
+}
+.cover-accent-line {
+    position: absolute;
+    top: 0;
+    left: 24mm;
+    width: 45mm;
+    height: 4px;
+    background: #38bdf8;
+}
+.cover-top {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cover-category-tag {
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    padding: 2mm 5mm;
+    border-radius: 2mm;
+}
+.cover-year {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #94a3b8;
+    letter-spacing: 2px;
+}
+.cover-middle {
+    position: relative;
+    z-index: 2;
+    margin: auto 0;
+}
+.cover-title-label {
+    font-size: 11pt;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 3mm;
+}
+.cover-main-title {
+    font-size: 38pt;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1.08;
+    color: #ffffff;
+    margin-bottom: 4mm;
+    text-transform: uppercase;
+}
+.cover-main-title span {
+    color: #38bdf8;
+}
+.cover-subtitle {
+    font-size: 13.5pt;
+    font-weight: 400;
+    color: #cbd5e1;
+    letter-spacing: 0.5px;
+    margin-bottom: 8mm;
+    max-width: 220mm;
+    line-height: 1.4;
+}
+.cover-tags-bar {
+    display: flex;
+    gap: 3mm;
+    flex-wrap: wrap;
+}
+.cover-tag {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #e2e8f0;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 2mm 4.5mm;
+    border-radius: 2mm;
+    letter-spacing: 0.5px;
+}
+.cover-bottom {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 6mm;
+}
+.cover-author-block {
+    display: flex;
+    flex-direction: column;
+}
+.cover-author-name {
+    font-size: 18pt;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+.cover-author-role {
+    font-size: 9.5pt;
+    font-weight: 500;
+    color: #38bdf8;
+    letter-spacing: 1px;
+    margin-top: 1mm;
+}
+.cover-contact-list {
+    display: flex;
+    gap: 8mm;
+    font-size: 9pt;
+    color: #94a3b8;
+}
+.cover-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 2mm;
+}
+.cover-contact-item strong {
+    color: #ffffff;
+}
+
+/* ==================== ABOUT ME PAGE ==================== */
+.about-page {
+    width: 297mm;
+    height: 210mm;
+    padding: 11mm 15mm 9mm 15mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+    position: relative;
+    background: #ffffff;
+    color: #1e293b;
+}
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #0284c7;
+    padding-bottom: 2.5mm;
+    margin-bottom: 3.5mm;
+}
+.about-header-title {
+    font-size: 17pt;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+}
+.about-header-tag {
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0284c7;
+}
+.about-content {
+    display: flex;
+    flex: 1;
+    gap: 7mm;
+    height: 164mm;
+}
+.about-sidebar {
+    width: 76mm;
+    display: flex;
+    flex-direction: column;
+    gap: 3mm;
+}
+.about-photo-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 2.5mm;
+    padding: 3.5mm;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+.about-photo {
+    width: 36mm;
+    height: 36mm;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0284c7;
+    margin-bottom: 2mm;
+}
+.about-photo-name {
+    font-size: 12pt;
+    font-weight: 800;
+    color: #0f172a;
+}
+.about-photo-role {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #0284c7;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: 0.5mm;
+}
+.about-info-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 2.5mm;
+    padding: 2.8mm 3.8mm;
+    font-size: 7.6pt;
+    line-height: 1.4;
+}
+.about-info-title {
+    font-size: 7pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #64748b;
+    margin-bottom: 1.2mm;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.6mm;
+}
+.about-info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8mm 0;
+    border-bottom: 1px dashed #f1f5f9;
+}
+.about-info-row:last-child {
+    border-bottom: none;
+}
+.about-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-intro-card {
+    background: #f8fafc;
+    border-left: 4px solid #0284c7;
+    border-top: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+    border-radius: 2.5mm;
+    padding: 3.2mm 4.2mm;
+    font-size: 8.2pt;
+    line-height: 1.45;
+    color: #334155;
+    margin-bottom: 3mm;
+}
+.about-pillars-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3.2mm;
+    margin-bottom: 3mm;
+}
+.pillar-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-top: 3px solid #0284c7;
+    border-radius: 2.5mm;
+    padding: 3mm 3.5mm;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+.pillar-title {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1.5mm;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 0.6mm;
+}
+.pillar-list {
+    list-style: none;
+    padding: 0;
+    font-size: 7.2pt;
+    line-height: 1.4;
+    color: #475569;
+}
+.pillar-list li {
+    position: relative;
+    padding-left: 3.2mm;
+    margin-bottom: 0.8mm;
+}
+.pillar-list li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    color: #0284c7;
+}
+.about-stages-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 2.5mm;
+    padding: 2.8mm 4mm;
+}
+.stages-title {
+    font-size: 7.4pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #475569;
+    margin-bottom: 1.5mm;
+}
+.stages-badges {
+    display: flex;
+    gap: 2mm;
+}
+.stage-pill {
+    flex: 1;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 2mm;
+    padding: 1.5mm 2.2mm;
+    font-size: 7pt;
+    font-weight: 600;
+    color: #1e293b;
+    text-align: center;
+}
+.stage-pill span {
+    display: block;
+    font-size: 6.2pt;
+    color: #64748b;
+    font-weight: 400;
+    margin-top: 0.3mm;
+}
+
+/* ==================== TOC PAGE ==================== */
+.toc-page {
+    width: 297mm;
+    height: 210mm;
+    padding: 10mm 15mm 9mm 15mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+    background: #ffffff;
+}
+.toc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3.5mm 8mm;
+    flex: 1;
+    height: 168mm;
+}
+.toc-section {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 2mm;
+    padding: 2.5mm 4mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.toc-sec-title {
+    font-size: 7.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #0369a1;
+    border-bottom: 1px solid #bae6fd;
+    padding-bottom: 1mm;
+    margin-bottom: 1.5mm;
+    display: flex;
+    justify-content: space-between;
+}
+.toc-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8mm;
+}
+.toc-row {
+    display: flex;
+    align-items: baseline;
+    font-size: 7pt;
+    line-height: 1.25;
+}
+.toc-num {
+    width: 5mm;
+    font-weight: 700;
+    color: #0284c7;
+}
+.toc-name {
+    font-weight: 600;
+    color: #0f172a;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 78mm;
+}
+.toc-meta {
+    font-size: 6.2pt;
+    color: #64748b;
+    margin-left: 2mm;
+    white-space: nowrap;
+}
+.toc-dots {
+    flex: 1;
+    border-bottom: 1px dotted #cbd5e1;
+    margin: 0 1.5mm;
+    height: 1px;
+}
+.toc-page-num {
+    font-weight: 700;
+    color: #0284c7;
+    width: 12mm;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* ==================== PROJECT PAGE ==================== */
+.project-page {
+    width: 297mm;
+    height: 210mm;
+    padding: 10mm 15mm 8mm 15mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    page-break-after: always;
+    position: relative;
+    background: #ffffff;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #0284c7;
+    padding-bottom: 2mm;
+    margin-bottom: 2.5mm;
+}
+.header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6mm;
+}
+.project-num {
+    font-size: 7pt;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #0284c7;
+    text-transform: uppercase;
+}
+.project-title {
+    font-size: 15pt;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.4px;
+}
+.header-badges {
+    display: flex;
+    gap: 2mm;
+}
+.badge {
+    font-size: 7.2pt;
+    font-weight: 600;
+    padding: 1.2mm 2.8mm;
+    border-radius: 1.8mm;
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+.badge-primary {
+    background: #e0f2fe;
+    color: #0369a1;
+    border-color: #bae6fd;
+}
+.content-area {
+    display: flex;
+    flex: 1;
+    gap: 5mm;
+    height: 164mm;
+    max-height: 164mm;
+}
+.info-col {
+    width: 78mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 8pt;
+    line-height: 1.4;
+    height: 164mm;
+}
+.desc-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 3.5px solid #0284c7;
+    padding: 2.6mm 3.4mm;
+    border-radius: 2mm;
+    color: #334155;
+    font-size: 7.6pt;
+    line-height: 1.4;
+    margin-bottom: 2mm;
+}
+.spec-group {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 2mm;
+    padding: 2.2mm 3.2mm;
+    margin-bottom: 2mm;
+}
+.spec-title {
+    font-size: 6.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: #64748b;
+    margin-bottom: 1.2mm;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 0.6mm;
+}
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6mm 0;
+    border-bottom: 1px dashed #f1f5f9;
+}
+.spec-row:last-child {
+    border-bottom: none;
+}
+.spec-label {
+    color: #64748b;
+    font-weight: 500;
+    font-size: 7.1pt;
+}
+.spec-val {
+    font-weight: 600;
+    color: #0f172a;
+    text-align: right;
+    font-size: 7.1pt;
+}
+.drawings-list {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 2mm;
+    padding: 2mm 3.2mm;
+}
+.drawings-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+.drawings-list li {
+    position: relative;
+    padding-left: 3.2mm;
+    margin-bottom: 0.6mm;
+    color: #475569;
+    font-size: 7.1pt;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.drawings-list li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    color: #0284c7;
+}
+.drawings-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 164mm;
+    gap: 2mm;
+}
+.drawing-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #cbd5e1;
+    border-radius: 2mm;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+.drawing-card-single {
+    height: 164mm;
+}
+.drawing-card-double {
+    height: 80mm;
+}
+.drawing-header {
+    background: #f8fafc;
+    padding: 1.2mm 2.8mm;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 6.6pt;
+    font-weight: 600;
+    color: #475569;
+    display: flex;
+    justify-content: space-between;
+}
+.drawing-img-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2mm;
+    background: #ffffff;
+    overflow: hidden;
+}
+.drawing-img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Universal Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 2mm;
+    font-size: 7.2pt;
+    color: #64748b;
+}
+.footer-brand {
+    font-weight: 700;
+    color: #0f172a;
+    letter-spacing: 0.3px;
+}
+.page-num {
+    font-weight: 600;
+    color: #0284c7;
+}
+</style>
+</head>
+<body>
+
+<div class="cover-page">
+    <div class="cover-grid"></div>
+    <div class="cover-accent-line"></div>
+    <div class="cover-top">
+        <span class="cover-category-tag">Portfólio Projektovej Dokumentácie</span>
+        <span class="cover-year">2026</span>
+    </div>
+    <div class="cover-middle">
+        <div class="cover-title-label">Technické zabezpečenie & Inžiniering budov</div>
+        <h1 class="cover-main-title">PROJEKTY <span>TZB</span></h1>
+        <p class="cover-subtitle">
+            Komplexná projektová dokumentácia vykurovania, chladenia, zdravotnej techniky a tepelnotechnických posúdení stavieb pre rezidenčný, občiansky a komerčný sektor.
+        </p>
+        <div class="cover-tags-bar">
+            <span class="cover-tag">VYKUROVANIE (ÚK)</span>
+            <span class="cover-tag">ZDRAVOTECHNIKA (ZTI)</span>
+            <span class="cover-tag">TEPELNOTECHNICKÉ POSÚDENIA (TTP)</span>
+            <span class="cover-tag">PROJEKTY PRE STAVEBNÉ POVOLENIE (PSP)</span>
+            <span class="cover-tag">REALIZAČNÉ PROJEKTY (RP)</span>
+        </div>
+    </div>
+    <div class="cover-bottom">
+        <div class="cover-author-block">
+            <span class="cover-author-name">Ing. Viktor Labovský</span>
+            <span class="cover-author-role">Autorizovaný / Samostatný projektant TZB</span>
+        </div>
+        <div class="cover-contact-list">
+            <div class="cover-contact-item">
+                <span>Tel:</span>
+                <strong>+421 915 341 479</strong>
+            </div>
+            <div class="cover-contact-item">
+                <span>E-mail:</span>
+                <strong>labovskyviktor@gmail.com</strong>
+            </div>
+            <div class="cover-contact-item">
+                <span>Lokalita:</span>
+                <strong>Bratislava / Celé Slovensko</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="about-page">
+    <div class="about-header">
+        <div class="about-header-title">O Mne & Profil Projektanta</div>
+        <div class="about-header-tag">Ing. Viktor Labovský • TZB Inžiniering</div>
+    </div>
+    <div class="about-content">
+        <div class="about-sidebar">
+            <div class="about-photo-card">
+                <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/web/public/profile-photo.png" class="about-photo" />
+                <div class="about-photo-name">Ing. Viktor Labovský</div>
+                <div class="about-photo-role">Projektant TZB</div>
+            </div>
+            <div class="about-info-box">
+                <div class="about-info-title">Kontaktné údaje</div>
+                <div class="about-info-row">
+                    <span style="color:#64748b;">Telefón:</span>
+                    <span style="font-weight:600;">+421 915 341 479</span>
+                </div>
+                <div class="about-info-row">
+                    <span style="color:#64748b;">E-mail:</span>
+                    <span style="font-weight:600;">labovskyviktor@gmail.com</span>
+                </div>
+                <div class="about-info-row">
+                    <span style="color:#64748b;">Pôsobnosť:</span>
+                    <span style="font-weight:600;">Bratislava & celá SR</span>
+                </div>
+                <div class="about-info-row">
+                    <span style="color:#64748b;">Spolupráca:</span>
+                    <span style="font-weight:600;">Ateliéry, HIP, Klienti</span>
+                </div>
+            </div>
+            <div class="about-info-box">
+                <div class="about-info-title">Softvérové vybavenie</div>
+                <div class="about-info-row">
+                    <span style="color:#64748b;">CAD platformy:</span>
+                    <span style="font-weight:600;">AutoCAD, CADKON</span>
+                </div>
+                <div class="about-info-row">
+                    <span style="color:#64748b;">Výpočty TZB:</span>
+                    <span style="font-weight:600;">TechCON, Protech</span>
+                </div>
+                <div class="about-info-row">
+                    <span style="color:#64748b;">Normové analýzy:</span>
+                    <span style="font-weight:600;">STN EN 12831, 73 0540</span>
+                </div>
+            </div>
+        </div>
+        <div class="about-main">
+            <div>
+                <div class="about-intro-card">
+                    Poskytujem profesionálne projektové a inžinierske služby v oblasti technických zariadení budov (TZB). Moja práca spája detailné výpočty, moderné energeticky úsporné technológie a striktné dodržiavanie technických noriem STN EN. Každý projekt je spracovaný s maximálnym dôrazom na minimalizáciu prevádzkových nákladov, bezproblémové stavebné konanie a precíznu koordináciu s ostatnými profesiami a realizačnými firmami.
+                </div>
+                <div class="about-pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-title">1. Vykurovanie & Chladenie (ÚK)</div>
+                        <ul class="pillar-list">
+                            <li>Teplovodné podlahové, stenové a stropné nízkoteplotné vykurovanie</li>
+                            <li>Tepelné čerpadlá (vzduch-voda, zem-voda) a hybridné zdroje</li>
+                            <li>Presné výpočty tepelných strát a potrieb tepla podľa STN EN 12831</li>
+                            <li>Hydraulické vyregulovanie, vyvažovacie ventily a zónová regulácia</li>
+                        </ul>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-title">2. Zdravotechnika (ZTI)</div>
+                        <ul class="pillar-list">
+                            <li>Vnútorný vodovod – pitná, teplá a úžitková voda, cirkulácia a úprava</li>
+                            <li>Vnútorná a areálová kanalizácia (splašková a dažďová)</li>
+                            <li>Odvodnenie striech, retencia, vsakovanie a hospodárenie s vodou</li>
+                            <li>Špeciálne inštalácie pre gastro prevádzky, obchodné centrá a lapače tukov</li>
+                        </ul>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-title">3. Tepelná technika (TTP)</div>
+                        <ul class="pillar-list">
+                            <li>Tepelnotechnické posúdenie konštrukcií podľa STN 73 0540-2+Z1+Z2</li>
+                            <li>Hodnotenie súčiniteľov prechodu tepla U a tepelného odporu R</li>
+                            <li>Hygienické posúdenie povrchovej teploty a eliminácia rizika plesní</li>
+                            <li>Kompletné podklady pre energetické certifikáty budov a audity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stages-box">
+                <div class="stages-title">Spracovávané stupne projektovej dokumentácie</div>
+                <div class="stages-badges">
+                    <div class="stage-pill">
+                        DÚR / Štúdia
+                        <span>Koncepčný návrh & bilancia potrieb</span>
+                    </div>
+                    <div class="stage-pill">
+                        PSP / DSP
+                        <span>Projekt pre stavebné povolenie</span>
+                    </div>
+                    <div class="stage-pill">
+                        RP (Realizačný projekt)
+                        <span>Podrobné výkresy a výkaz výmer</span>
+                    </div>
+                    <div class="stage-pill">
+                        Autorský dozor
+                        <span>Dohľad a konzultácie pri výstavbe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 02</span>
+    </div>
+</div>
+
+
+<div class="toc-page">
+    <div class="header">
+        <div class="header-title">Obsah Portfólia Projektov</div>
+        <div class="header-tag">Prehľad dokumentácie TZB</div>
+    </div>
+    <div class="toc-grid">
+        <!-- SEKCIA 1 -->
+        <div class="toc-section">
+            <div class="toc-sec-title">
+                <span>I. Inžinierske stavby & Občianska vybavenosť</span>
+                <span style="font-size:6.5pt; color:#64748b;">(ÚK / ZTI)</span>
+            </div>
+            <div class="toc-items">
+                <div class="toc-row">
+                    <span class="toc-num">01</span>
+                    <span class="toc-name">EDU-TECH KAMPUS PÚCHOV (Pôdorysy podlaží a strechy)</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 05</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">02</span>
+                    <span class="toc-name">EDU-TECH KAMPUS PÚCHOV (Hydraulické schémy)</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 06</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">03</span>
+                    <span class="toc-name">ASOC – Administratívno-skladové centrum</span>
+                    <span class="toc-meta">ZTI</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 07</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">04</span>
+                    <span class="toc-name">Obecný dom Limbach – Nadstavba</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 09</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">05</span>
+                    <span class="toc-name">Vinárske centrum UNIMPEX Svätý Jur</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 26</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">06</span>
+                    <span class="toc-name">ADM Komárňanská – Hospodársko-admin. objekt</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 11</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">07</span>
+                    <span class="toc-name">Materská škola Nový Svet</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 18</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEKCIA 2 -->
+        <div class="toc-section">
+            <div class="toc-sec-title">
+                <span>II. Rezidenčná výstavba – Rodinné domy & Byty</span>
+                <span style="font-size:6.5pt; color:#64748b;">(ÚK / Podlahové vykurovanie)</span>
+            </div>
+            <div class="toc-items">
+                <div class="toc-row">
+                    <span class="toc-num">08</span>
+                    <span class="toc-name">Rodinný dom Slivník (RD Imričko)</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 04</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">09</span>
+                    <span class="toc-name">Rodinný dom Chorvátsky Grob (RD VALUL)</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 24</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">10</span>
+                    <span class="toc-name">Rodinný dom Vinohrady (RD FIGA)</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 20</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">11</span>
+                    <span class="toc-name">Rodinný dom Kuchyňa (Baričičova)</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 19</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">12</span>
+                    <span class="toc-name">Rodinný dom Senec (Gajdošík)</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 23</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">13</span>
+                    <span class="toc-name">Rodinný dom Hviezdoslavov (RD HVZD)</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 21</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">14</span>
+                    <span class="toc-name">Rodinný dom Podbiel (RD PODBI)</span>
+                    <span class="toc-meta">ZTI + ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 22</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">15</span>
+                    <span class="toc-name">Rodinný dom Pod priehradou, Kuchyňa</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 30</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">16</span>
+                    <span class="toc-name">Rodinný dom Veľká Paka</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 29</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">17</span>
+                    <span class="toc-name">Byt Zámocká 16, Bratislava (Podkrovný byt)</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 13</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">18</span>
+                    <span class="toc-name">Byt Björnsonova, Bratislava</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 12</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEKCIA 3 -->
+        <div class="toc-section">
+            <div class="toc-sec-title">
+                <span>III. Rekreačné objekty & Horské chaty</span>
+                <span style="font-size:6.5pt; color:#64748b;">(Vykurovanie & ZTI)</span>
+            </div>
+            <div class="toc-items">
+                <div class="toc-row">
+                    <span class="toc-num">19</span>
+                    <span class="toc-name">Chata na Jankovej Lúke Štrbské Pleso</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 08</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">20</span>
+                    <span class="toc-name">Rekreačná chata Zlatá hora, Stupava</span>
+                    <span class="toc-meta">ÚK + ZTI</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 15</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">21</span>
+                    <span class="toc-name">Rekreačná chata Žľaby, Košice</span>
+                    <span class="toc-meta">El. kúrenie</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 14</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">22</span>
+                    <span class="toc-name">Záhradná chata Vrakuňa - lesopark</span>
+                    <span class="toc-meta">ÚK</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 27</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SEKCIA 4 -->
+        <div class="toc-section">
+            <div class="toc-sec-title">
+                <span>IV. Zdravotechnika (ZTI) & Tepelná technika (TTP)</span>
+                <span style="font-size:6.5pt; color:#64748b;">(Gastro / Energetika)</span>
+            </div>
+            <div class="toc-items">
+                <div class="toc-row">
+                    <span class="toc-num">23</span>
+                    <span class="toc-name">TTP – FAXCOPY Domkárska, Bratislava</span>
+                    <span class="toc-meta">TTP</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 10</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">24</span>
+                    <span class="toc-name">Kaviareň Nivy Bratislava (Nivy Centrum)</span>
+                    <span class="toc-meta">ZTI (RP)</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 17</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">25</span>
+                    <span class="toc-name">Kaviareň Klasiko OC Polus, Bratislava</span>
+                    <span class="toc-meta">ZTI (RP)</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 16</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">26</span>
+                    <span class="toc-name">TTP – Výrobná hala Víno Matyšák, Pezinok</span>
+                    <span class="toc-meta">TTP</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 25</span>
+                </div>
+                <div class="toc-row">
+                    <span class="toc-num">27</span>
+                    <span class="toc-name">Komplexné rozvody ZTI – Distribúcia vody</span>
+                    <span class="toc-meta">ZTI</span>
+                    <span class="toc-dots"></span>
+                    <span class="toc-page-num">Strana 28</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 03</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 01 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rodinný dom Slivník (RD Imričko)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Slivník, okr. Trebišov</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Moderný návrh ústredného kúrenia pre rodinný dom v obci Slivník. Projekt v sebe spája detailný výpočet tepelných strát a ziskov podľa STN EN 12831 s optimalizovaným návrhom zdroja a dimenzovaním rozvodných potrubí.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Teplovodné podlahové vykurovanie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Tepelné čerpadlo vzduch/voda</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">11,50 kW (zisky 5,40 kW)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-13 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">21,52 MWh/rok</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12831-1, STN EN 12828+A1</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Schéma zapojenia sústavy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260907_UK_RD_Imričko_1NP.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: SCHÉMA ZAPOJENIA SÚSTAVY</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260907_UK_RD_Imričko_Schéma.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 04</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 02 / Referenčná dokumentácia</span>
+            <h1 class="project-title">EDU-TECH KAMPUS PÚCHOV (Pôdorysy podlaží a strechy)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Horné Kočkovce, Púchov</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Komplexný návrh systému vzduchového a radiátorového vykurovania pre 4-podlažný objekt kampusu Trenčianskej univerzity v Púchove. Objekt je napojený na nový ekologický zdroj tepla – tepelné čerpadlo situované na streche budovy, čím sa minimalizujú prevádzkové náklady.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Vzduchové a radiátorové vykurovanie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Tepelné čerpadlo na streche objektu</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">241,9 kW</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-13 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">231 vykurovacích dní</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12831, STN EN 17248, STN 73 0540</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (8 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Pôdorys rozvodov 2.NP</li><li>Pôdorys rozvodov 3.NP</li><li>Pôdorys rozvodov 4.NP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260810_UK_KAMPUS_1NP.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: PÔDORYS STRECHY – OSADENIE ZDROJA TEPLA</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260810_UK_KAMPUS_STRECHA.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 05</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 03 / Referenčná dokumentácia</span>
+            <h1 class="project-title">EDU-TECH KAMPUS PÚCHOV (Hydraulické schémy rozvodov)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Horné Kočkovce, Púchov</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Komplexný návrh systému vzduchového a radiátorového vykurovania pre 4-podlažný objekt kampusu Trenčianskej univerzity v Púchove. Objekt je napojený na nový ekologický zdroj tepla – tepelné čerpadlo situované na streche budovy, čím sa minimalizujú prevádzkové náklady.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Vzduchové a radiátorové vykurovanie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Tepelné čerpadlo na streche objektu</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">241,9 kW</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-13 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">231 vykurovacích dní</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12831, STN EN 17248, STN 73 0540</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (8 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Pôdorys rozvodov 2.NP</li><li>Pôdorys rozvodov 3.NP</li><li>Pôdorys rozvodov 4.NP</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: HYDRAULICKÁ SCHÉMA HLAVNÝCH ROZVODOV</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260810_UK_KAMPUS_Schéma_rozvodov_UK_1.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: HYDRAULICKÁ SCHÉMA ZAPOJENIA ZDROJA TEPLA</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260810_UK_KAMPUS_Schéma_zapojenia.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 06</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 04 / Referenčná dokumentácia</span>
+            <h1 class="project-title">ASOC – Administratívno-skladové centrum</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Zdravotechnika (ZTI)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Bratislava</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt zdravotnej techniky (ZTI) pre veľkoplošné skladové haly. Spracováva koncepciu odkanalizovania a prívodu úžitkovej vody pre hygienické zázemia ubytovaných zamestnancov s dôrazom na vysokú kapacitu a zaťaženie systému.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Vnútorný vodovod, kanalizácia, strechy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Verejný vodovod, areálová sieť</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Vysokokapacitná distribúcia ZTI</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">+10 °C min. teplota trás</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Priemyselné zaťaženie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 806, STN EN 12056</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (3 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Pôdorys rozvodov 2.NP</li><li>Pôdorys strechy – osadenie zdroja tepla</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260619_ZTI_ASOC_1_np.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: PÔDORYS ROZVODOV 2.NP</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260619_ZTI_ASOC_2np.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 07</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 05 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Chata na Jankovej Lúke, Štrbské Pleso</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (DSP)</span>
+            <span class="badge">Štrbské Pleso, Vysoké Tatry</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Návrh vykurovacieho systému pre rekreačný objekt v náročných klimatických podmienkach Vysokých Tatier. Systém je dimenzovaný na spoľahlivú prevádzku aj pri extrémnych mrazoch, kombinujúci komfort s požiadavkami na rýchly nábeh tepla v rekreačných zariadeniach.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Nízkoteplotné vykurovanie s rýchlym nábehom</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Automatizovaný centrálny zdroj</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Dimenzované na horské podmienky</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-15 °C (oblastná výpočtová)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Zvýšená tepelná akumulácia</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (7 výkresov)</div>
+                <ul>
+                    <li>Uk chata na jank luke 01</li><li>Uk chata na jank luke 02</li><li>Uk chata na jank luke 03</li><li>Uk chata na jank luke 04</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: UK CHATA NA JANK LUKE 01</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/251110_UK_CHATA_NA_JANK_LUKE_01.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: UK CHATA NA JANK LUKE 02</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/251110_UK_CHATA_NA_JANK_LUKE_02.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 08</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 06 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Obecný dom Limbach – Nadstavba</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Limbach, okr. Pezinok</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Návrh ústredného kúrenia pre nadstavbu obecného domu. Riešenie využíva nízkoteplotné konvekčné vykurovanie (50/40°C). Primárnym zdrojom tepla je moderná vnútorná jednotka tepelného čerpadla vzduch/voda, ktorá pokrýva kompletné potreby objektu na kúrenie aj prípravu teplej vody.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Nízkoteplotné konvekčné (50/40°C)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Tepelné čerpadlo vzduch/voda Viessmann</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">5,35 kW</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">11,62 MWh/rok (ÚK + TV)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>252cb3 psp 01 1241 s01 vyk 001 n01 00</li><li>252cb3 psp 01 1241 s01 vyk n02 sch 00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: 252CB3 PSP 01 1241 S01 VYK 001 N01 00</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/252CB3_PSP_01_1241_S01_VYK_001_N01_00.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: 252CB3 PSP 01 1241 S01 VYK N02 SCH 00</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/252CB3_PSP_01_1241_S01_VYK_N02_SCH_00.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 09</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 07 / Referenčná dokumentácia</span>
+            <h1 class="project-title">TTP – FAXCOPY Domkárska, Bratislava</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Tepelná technika (TTP)</span>
+            <span class="badge">Odborný posudok (TTP)</span>
+            <span class="badge">Domkárska 15, Bratislava</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Odborné tepelnotechnické posúdenie (TTP) stavebných konštrukcií objektu. Dokument preukazuje zhodu navrhovaných obalových konštrukcií s normovými požiadavkami STN, posudzuje riziko kondenzácie a definuje celkovú energetickú kvalitu stavby.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Tepelnotechnické posúdenie konštrukcií</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Posudok obalového plášťa budovy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Posúdenie U_max, R_min a hygieny</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C ext. / +20 °C int.</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Prevencia kondenzácie a plesní</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN 73 0540-2+Z1+Z2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (4 výkresov)</div>
+                <ul>
+                    <li>Posúdenie fragmentu konštrukcie</li><li>Posúdenie fragmentu konštrukcie</li><li>Pôdorys 1.PP (Suterén)</li><li>Posúdenie fragmentu konštrukcie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: POSÚDENIE FRAGMENTU KONŠTRUKCIE</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260903_TTP_FAXCOPY.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: POSÚDENIE FRAGMENTU KONŠTRUKCIE</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/P1_TTP.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 10</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 08 / Referenčná dokumentácia</span>
+            <h1 class="project-title">ADM Komárňanská – Hospodársky objekt</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Komárňanská ul., Bratislava</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt vykurovania pre hospodársko-administratívny objekt v Bratislave. Vykurovací systém je riešený pomocou nízkoteplotného teplovodného podlahového vykurovania. Zdrojom tepla je lokálne inštalované zariadenie optimalizované pre tepelné straty moderných kancelárskych priestorov.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Teplovodné podlahové vykurovanie (45/35°C)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Lokálny vysokoúčinný zdroj</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">7,60 kW</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Optimalizácia prevádzkových nákladov</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>Uk adm komarnianska 01</li><li>Uk adm komarnianska 02</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: UK ADM KOMARNIANSKA 01</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/251021_UK_ADM_Komarnianska_01.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: UK ADM KOMARNIANSKA 02</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/251021_UK_ADM_Komarnianska_02.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 11</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 09 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Byt Björnsonova, Bratislava</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Björnsonova ul., Bratislava</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt rekonštrukcie vykurovacieho systému bytovej jednotky. Zahŕňa prepočet existujúcich tepelných strát a modernizáciu systému na dosiahnutie lepšej tepelnej pohody so súčasným znížením energetickej náročnosti.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Rekonštrukcia vykurovacieho systému bytu</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Prepočet a napojenie na centrálny zdroj</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Zníženie energetickej náročnosti</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Vyregulovanie tepelnej pohody</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (4 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov a inštalácií</li><li>Pôdorys rozvodov a inštalácií</li><li>Uk byt bjornsonova kladačsky vykres</li><li>Schéma zapojenia sústavy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV A INŠTALÁCIÍ</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260212_UK_Byt_Bjornsonova_podorys_PODORYS_ZDROJ.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: SCHÉMA ZAPOJENIA SÚSTAVY</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/251217_UK_Bjornsonova_ODVOD_SPALIN_SCHEMA.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 12</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 10 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Byt Zámocká 16, Bratislava (Podkrovie)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Zámocká 16, Bratislava (Staré Mesto)</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Riešenie vykurovacej sústavy pre nadštandardný podkrovný byt v historickom centre Bratislavy. Systém je napojený na centrálny zdroj tepla a je precízne zaregulovaný s ohľadom na špecifické tepelnotechnické vlastnosti zložitej konštrukcie krovu.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Podlahové vykurovanie zložitého podkrovia</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Centrálny zdroj tepla (CZT)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Individuálne hydraulické vetvy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Regulácia Uponor</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (3 výkresov)</div>
+                <ul>
+                    <li>Uk byt zamocka-model</li><li>Uk byt zamocka-model</li><li>Výkaz materiálu a špecifikácia prvkov</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: UK BYT ZAMOCKA-MODEL</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/251202_UK_ByT_Zamocka_Model.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: UK BYT ZAMOCKA-MODEL</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260204_UK_ByT_Zamocka_Model.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 13</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 11 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rekreačná chata Žľaby, Košice</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Košice-Sever, rekreačná oblasť</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt prístavby a rekonštrukcie rekreačnej chaty s návrhom komfortného elektrického plošného vykurovania (vykurovacie fólie). Riešenie je ideálne pre víkendové objekty vďaka svojej okamžitej reakcii, jednoduchej inštalácii a možnosti vzdialeného ovládania.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Elektrické podlahové fólie Heatflow 110W/m²</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Elektrické fólie + kúpeľňový rebrík</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">3,90 kW</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-13 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">9,09 MWh/rok (ÚK + TV)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (3 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Pôdorys rozvodov 2.NP</li><li>Pôdorys 1.PP (Suterén)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260629_UK_CHATA_ŽLABY_1_NP.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: PÔDORYS ROZVODOV 2.NP</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260629_UK_CHATA_ŽLABY_2_NP.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 14</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 12 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rekreačná chata Zlatá hora, Stupava</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie + ZTI</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Stupava, Zlatá hora</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt zdravotnej techniky a vykurovania pre exkluzívnu záhradnú chatku v Stupave. Rieši nezávislé zásobovanie pitnou vodou zo studne, odvod splaškov do lokálnej žumpy a komfortné priamovýhrevné podlahové kúrenie (Heatflow) pre obývané podlažia.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Podlahové kúrenie Heatflow + studňa</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Priamovýhrevné fólie, lokálna žumpa</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Nezávislé zásobovanie chaty</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">Zónové priestorové termostaty</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Bezúdržbová prevádzka</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12831, STN EN 806</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (3 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Pôdorys 1.PP (Suterén)</li><li>Pôdorys strechy – osadenie zdroja tepla</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260528_UK_Chata_zlata_hora_1np.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: PÔDORYS 1.PP (SUTERÉN)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260528_UK_Chata_zlata_hora_1pp.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 15</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 13 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Kaviareň Klasiko OC Polus, Bratislava</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Zdravotechnika (ZTI)</span>
+            <span class="badge">Realizačný projekt (RP)</span>
+            <span class="badge">OC Polus (VIVO!), Bratislava</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Realizačný projekt zdravotnej techniky pre gastro-prevádzku v OC Polus. Zahŕňa profesionálny návrh vnútorných rozvodov pitnej vody a kanalizácie s dôrazom na spoľahlivosť technológie baru, prísne hygienické normy a bezproblémové napojenie na siete nákupného centra.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Rozvody vody a kanalizácie zázemia</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Centrálna sieť nákupného centra</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Pripojenie kávovarov, umývačiek, drezov</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">Hygienické normy gastro</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Plynulá obchodná prevádzka</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 806, STN EN 12056</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov a inštalácií</li><li>Schéma zapojenia sústavy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV A INŠTALÁCIÍ</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/KAVIAREN_KLASIKO_ZTI_DSP_podorys.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: SCHÉMA ZAPOJENIA SÚSTAVY</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/KAVIAREN_KLASIKO_ZTI_DSP_schema.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 16</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 14 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Kaviareň Nivy Bratislava (Nivy Centrum)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Zdravotechnika (ZTI)</span>
+            <span class="badge">Realizačný projekt (RP)</span>
+            <span class="badge">Nivy Centrum, Bratislava</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt vnútorného vodovodu a kanalizácie pre prémiovú kaviareň v komplexe Nivy Centrum Bratislava. Technické riešenie pokrýva zásobovanie všetkých zariaďovacích predmetov a kaviarenských technológií filtrovanou vodou vrátane manažmentu splaškových vôd.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Vnútorný vodovod a kanalizácia baru</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Filtrovaná a zmäkčená pitná voda</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Gastro technológia, tuková kanalizácia</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">Príprava TÚV a cirkulácia</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Vysoká frekvencia odberu</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 806, STN EN 12056</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov a inštalácií</li><li>Technický rez vedenia trás ZTI</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV A INŠTALÁCIÍ</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20251410_RP_E11_07_ZTI_ROZPRAVKOVA_KAVIAREN_PODORYS.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: TECHNICKÝ REZ VEDENIA TRÁS ZTI</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20251410_RP_E11_07_ZTI_ROZPRAVKOVA_KAVIAREN_REZ.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 17</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 15 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Materská škola Nový Svet</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Obec Nový Svet, okr. Senec</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt ústredného vykurovania pre objekt materskej školy v obci Nový Svet. Riešenie je zamerané na zabezpečenie stabilnej tepelnej pohody, bezpečné plošné rozloženie teplôt a energeticky hospodárnu prevádzku predškolského zariadenia.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Ústredné vykurovanie predškolského objektu</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Ekologický zdroj tepla</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Rovnomerné plošné rozloženie teplôt</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Bezpečná prevádzka pre deti</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (4 výkresov)</div>
+                <ul>
+                    <li>Uk ov ms novy svet 01</li><li>Uk ov ms novy svet 02</li><li>Uk ov ms novy svet 03</li><li>Uk ov ms novy svet 04</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: UK OV MS NOVY SVET 01</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260123_UK_OV_MS_Novy_svet_01.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: UK OV MS NOVY SVET 02</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260123_UK_OV_MS_Novy_svet_02.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 18</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 16 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rodinný dom Kuchyňa (Baričičova)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Obec Kuchyňa, okr. Malacky</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Návrh moderného systému podlahového vykurovania pre rodinný dom v obci Kuchyňa. Zdrojom tepla je kompaktné tepelné čerpadlo. Projekt zahŕňa kompletnú hydraulickú schému, kladačské plány a vyregulovanie sústavy pre dosiahnutie maximálnej efektivity.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Teplovodné podlahové vykurovanie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Kompaktné tepelné čerpadlo</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Optimalizované kladačské plány</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Vyregulovaná nízkoteplotná sústava</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (3 výkresov)</div>
+                <ul>
+                    <li>2619ad psp 01 1111 s01 vyk 001 n01 00</li><li>2619ad psp 01 1111 s01 vyk 002 n02 00</li><li>2619ad psp 01 1111 s01 vyk 003 sch 00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: 2619AD PSP 01 1111 S01 VYK 001 N01 00</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/2619AD_PSP_01_1111_S01_VYK_001_N01_00.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: 2619AD PSP 01 1111 S01 VYK 002 N02 00</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/2619AD_PSP_01_1111_S01_VYK_002_N02_00.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 19</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 17 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rodinný dom Vinohrady (RD FIGA)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Vinohrady, Bratislava III</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Návrh kúrenia pre novostavbu rodinného domu so zameraním na pokročilé tepelné čerpadlo vzduch/voda. Systém pracuje s teplotným spádom 45/35°C do veľkoplošného podlahového vykurovania a plynulou reguláciou priestorovej teploty, zabezpečujúc pokrytie tepelných strát necelých 10 kW.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Podlahové (45/35°C) + konvekčné kúrenie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Tepelné čerpadlo vzduch/voda Viessmann</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">9,64 kW</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">19,26 MWh/rok (ÚK + TV)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (3 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Pôdorys 1.PP (Suterén)</li><li>Schéma zapojenia sústavy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260130_UK_RD_FIGA_1np.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: SCHÉMA ZAPOJENIA SÚSTAVY</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260130_UK_RD_FIGA_SCHEMA_Model.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 20</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 18 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rodinný dom Hviezdoslavov (RD HVZD)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Hviezdoslavov, okr. Dunajská Streda</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projektová dokumentácia ústredného vykurovania rodinného domu v obci Hviezdoslavov. Systém je poháňaný tepelným čerpadlom vzduch-voda, doplnený o podlahové rozvody tepla a optimalizovaný na dlhodobo nízke prevádzkové náklady a bezúdržbový chod.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Teplovodné podlahové vykurovanie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Tepelné čerpadlo Viessmann Vitocal (7,5 kW)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">5,43 kW</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">11,67 MWh/rok (ÚK + TV)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Schéma zapojenia sústavy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260406_RD_HVZD_UK_final_1np_840x420.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: SCHÉMA ZAPOJENIA SÚSTAVY</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260406_RD_HVZD_UK_final_schema_630x297.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 21</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 19 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rodinný dom Podbiel (RD PODBI)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie + ZTI</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Podbiel, Orava</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Riešenie teplovodného vykurovania s núteným obehom pre prístavbu rodinného domu. Navrhnuté riešenie využíva moderné doskové radiátory s nízkou tepelnou zotrvačnosťou, pripojené na existujúci rozvod a zabezpečujúce okamžitý tepelný výkon s presnou reguláciou.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Teplovodné konvekčné kúrenie + ZTI</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Doskové vykurovacie telesá s nízkou zotrvačnosťou</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Okamžitý reakčný výkon</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-15 °C (oravská oblasť)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Presné hydraulické dimenzovanie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Pôdorys rozvodov 1.NP (Prízemie)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260721_RD_PODBI_UK_1NP.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260721_RD_PODBI_ZTI_1NP.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 22</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 20 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rodinný dom Senec (Gajdošík)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Senec</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt vykurovania rodinného domu v Senci. Systém je koncipovaný ako kombinácia teplovodného podlahového vykurovania v obytných zónach a doplnkových konvekčných telies. Dodávku tepla zabezpečuje vysokoúčinné tepelné čerpadlo VIESSMANN so zameraním na maximálnu efektivitu.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Podlahové vykurovanie (45/35°C) + rebríky</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Tepelné čerpadlo Viessmann Vitocal</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">6,00 kW</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">12,10 MWh/rok (ÚK + TV)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>Uk rd senec gajdosik pd</li><li>Schéma zapojenia sústavy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: UK RD SENEC GAJDOSIK PD</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260122_UK_RD_Senec_Gajdosik_PD.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: SCHÉMA ZAPOJENIA SÚSTAVY</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260122_UK_RD_Senec_Gajdosik_SCHEMA.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 23</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 21 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rodinný dom Chorvátsky Grob (RD VALUL)</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Chorvátsky Grob</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projektová dokumentácia rieši návrh moderného vykurovacieho systému pre novostavbu rodinného domu v obci Chorvátsky Grob. Zabezpečenie tepelnej pohody je riešené s dôrazom na energetickú efektivitu, využitím tepelného čerpadla a podlahového vykurovania pre maximálny užívateľský komfort.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Teplovodné podlahové vykurovanie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Tepelné čerpadlo vzduch/voda</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Nízkoenergetický štandard A0</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Vysoká účinnosť COP</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (3 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov a inštalácií</li><li>Výkaz materiálu a špecifikácia prvkov</li><li>Schéma zapojenia sústavy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV A INŠTALÁCIÍ</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260317_RD_VALUL_UK_pôdorys.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: SCHÉMA ZAPOJENIA SÚSTAVY</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260317_RD_VALUL_UK_schema.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 24</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 22 / Referenčná dokumentácia</span>
+            <h1 class="project-title">TTP – Výrobná hala Víno Matyšák, Pezinok</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Tepelná technika (TTP)</span>
+            <span class="badge">Odborný posudok (TTP)</span>
+            <span class="badge">Pezinok</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Tepelnotechnické posúdenie konštrukcií výrobnej haly Víno Matyšák v Pezinku. Analyzuje všetky kľúčové teplovýmenné plochy (steny, strechy, výplne otvorov) a garantuje, že architektonické riešenie spĺňa hygienické aj energetické kritériá súčasnej legislatívy.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Posúdenie obalových konštrukcií haly</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Analýza teplovýmenných plôch</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Súčiniteľ prechodu tepla U konštrukcií</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">Priemyselné normové kritériá</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Hygienické a energetické hodnotenie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN 73 0540-2+Z1+Z2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (1 výkresov)</div>
+                <ul>
+                    <li>Posúdenie fragmentu konštrukcie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-single">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: POSÚDENIE FRAGMENTU KONŠTRUKCIE</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260917_TTP_Víno_MATYŠÁK.png" class="drawing-img" style="max-height:146mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 25</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 23 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Vinárske centrum UNIMPEX Svätý Jur</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Na Pažiti, Svätý Jur</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt vykurovania pre administratívno-obchodnú stavbu Vinárskeho centra vo Svätom Jure. Teplovodný podlahový systém je plne optimalizovaný na špecifickú prevádzku centra s výpočtovou tepelnou stratou 31 kW, s ohľadom na zónovú reguláciu.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Nízkoteplotné podlahové kúrenie (45/35°C)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Projektovaný zdroj tepla s odvodom spalín</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">31,10 kW</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Zónová regulácia prevádzky</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (4 výkresov)</div>
+                <ul>
+                    <li>Uk unimpex vinarske centrum a01</li><li>Uk unimpex vinarske centrum a02</li><li>Uk unimpex vinarske centrum a03</li><li>Uk unimpex vinarske centrum a05</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: UK UNIMPEX VINARSKE CENTRUM A01</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260219_UK_Unimpex_vinarske_centrum_A01.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: UK UNIMPEX VINARSKE CENTRUM A02</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260219_UK_Unimpex_vinarske_centrum_A02.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 26</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 24 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Záhradná chata Vrakuňa - lesopark</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Bratislava - Vrakuňa</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Vykurovací systém pre záhradnú chatu s dôrazom na nezávislosť od plynovej prípojky. Zabezpečenie tepelnej pohody je riešené formou inteligentného elektrického podlahového vykurovania s plošnými vykurovacími fóliami a lokálnymi doplnkovými telesami v hygienických zázemiach.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Elektrické podlahové fólie Heatflow 110W/m²</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Elektrické fólie bez plynovej prípojky</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">2,90 kW (výpočtový výkon 4,50 kW)</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Lokálna digitálna regulácia</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (1 výkresov)</div>
+                <ul>
+                    <li>Uk zch vrakuňa - lesopark-pd</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-single">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: UK ZCH VRAKUŇA - LESOPARK-PD</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/251128_UK_ZCH_Vrakuňa___lesopark_pd.png" class="drawing-img" style="max-height:146mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 27</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 25 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Komplexné rozvody ZTI – Distribúcia vody</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Zdravotechnika (ZTI)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Bratislavský kraj</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Projekt technického zabezpečenia budov – distribúcia pitnej vody a sanitárnej kanalizácie.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Vnútorný vodovod a sanitárna kanalizácia</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Verejný vodovod, akumulácia TÚV</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Hydraulické dimenzovanie svetlostí DN</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">Požiarna voda a cirkulácia TÚV</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Spločňovacie normové štandardy</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 806, STN EN 12056</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (5 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Pôdorys 1.PP (Suterén)</li><li>Zti chata zlata hora-model</li><li>Pôdorys strechy – osadenie zdroja tepla</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260528_ZTI_Chata_zlata_hora_1np.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: PÔDORYS 1.PP (SUTERÉN)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/260528_ZTI_Chata_zlata_hora_1pp.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 28</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 26 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rodinný dom Veľká Paka</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Veľká Paka, okr. Dunajská Streda</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Kompletný projekt vykurovania a zdravotnej techniky pre bungalov vo Veľkej Pake. Obsahuje detailný hydraulický návrh rozvodov pitnej vody, domovej kanalizácie a teplovodného vykurovacieho okruhu, optimalizovaného pre potreby mladej rodiny.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Podlahové vykurovanie a rozvody ZTI</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Vysokoúčinný nízkoteplotný zdroj</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Kompletný domový okruh vody a tepla</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Nízke prevádzkové náklady bungalovu</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Schéma zapojenia sústavy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260916_UK_RD_VELKA_PAKA_1NP.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: SCHÉMA ZAPOJENIA SÚSTAVY</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260916_UK_RD_VELKA_PAKA_schéma.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 29</span>
+    </div>
+</div>
+
+
+<div class="project-page">
+    <div class="header">
+        <div class="header-left">
+            <span class="project-num">Projekt 27 / Referenčná dokumentácia</span>
+            <h1 class="project-title">Rodinný dom Pod priehradou, Kuchyňa</h1>
+        </div>
+        <div class="header-badges">
+            <span class="badge badge-primary">Vykurovanie (ÚK)</span>
+            <span class="badge">Projekt stavby (PSP)</span>
+            <span class="badge">Kuchyňa, Pod priehradou</span>
+        </div>
+    </div>
+    <div class="content-area">
+        <div class="info-col">
+            <div>
+                <div class="desc-box">
+                    Ústredné kúrenie pre IBV v obci Kuchyňa. Kombinácia ekologického zdroja tepla a inteligentnej distribúcie s presným výpočtom tepelných strát zaručuje spoľahlivú a ekonomickú prevádzku počas celého roka.
+                </div>
+                <div class="spec-group">
+                    <div class="spec-title">Technické parametre stavby</div>
+                    <div class="spec-row">
+                        <span class="spec-label">Navrhovaný systém</span>
+                        <span class="spec-val">Nízkoteplotné podlahové vykurovanie</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Zdroj energie / tepla</span>
+                        <span class="spec-val">Ekologické tepelné čerpadlo</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Tepelná strata / výkon</span>
+                        <span class="spec-val">Celoročná spoľahlivá prevádzka</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Výpočtová teplota</span>
+                        <span class="spec-val">-11 °C</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Ročná bilancia</span>
+                        <span class="spec-val">Úsporné obehové čerpadlá</span>
+                    </div>
+                    <div class="spec-row">
+                        <span class="spec-label">Normový rámec</span>
+                        <span class="spec-val">STN EN 12828, STN EN 12831</span>
+                    </div>
+                </div>
+            </div>
+            <div class="drawings-list">
+                <div class="spec-title">Prílohy v projekte (2 výkresov)</div>
+                <ul>
+                    <li>Pôdorys rozvodov 1.NP (Prízemie)</li><li>Schéma zapojenia sústavy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="drawings-col">
+            
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 01: PÔDORYS ROZVODOV 1.NP (PRÍZEMIE)</span>
+                    <span>MIERKA 1:50</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260804_UK_RD_POD_PRIEHRADOU_1NP.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+
+            <div class="drawing-card drawing-card-double">
+                <div class="drawing-header">
+                    <span>VÝKRES Č. 02: SCHÉMA ZAPOJENIA SÚSTAVY</span>
+                    <span>TECHNICKÁ DOKUMENTÁCIA</span>
+                </div>
+                <div class="drawing-img-wrap">
+                    <img src="file:///C:/Users/42191/.gemini/antigravity-ide/scratch/portfolio-projektov/pdf_renders/20260804_UK_RD_POD_PRIEHRADOU_Schéma.png" class="drawing-img" style="max-height:68mm;" />
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    <div class="footer">
+        <span class="footer-brand">Ing. Viktor Labovský • Technické zariadenie budov (TZB)</span>
+        <span>Autorizovaný projektant • +421 915 341 479 • labovskyviktor@gmail.com</span>
+        <span class="page-num">Strana 30</span>
+    </div>
+</div>
+
+</body>
+</html>
